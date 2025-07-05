@@ -3,6 +3,8 @@ import ImageSlider from "./Components/image-slider";
 import RandomColor from "./Components/RandomColor";
 import StarRating from "./Components/starRating";
 import LoadMoreData from "./Components/LoadMore-Button";
+import TreeView from "./Components/tree-view";
+import menus from "./Components/tree-view/data";
 
 function App() {
     return (
@@ -20,7 +22,9 @@ function App() {
                 limit={10}
             /> */}
             {/* Load More Products Components */}
-            <LoadMoreData />
+            {/* <LoadMoreData /> */}
+            {/* Tree View component / recursive navigation menu*/}
+            <TreeView menus={menus} />
         </div>
     );
 }
