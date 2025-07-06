@@ -5,6 +5,7 @@ import StarRating from "./Components/starRating";
 import LoadMoreData from "./Components/LoadMore-Button";
 import TreeView from "./Components/tree-view";
 import menus from "./Components/tree-view/data";
+import QRCodeGenerator from "./Components/qr-code-generator";
 
 function App() {
     return (
@@ -24,7 +25,9 @@ function App() {
             {/* Load More Products Components */}
             {/* <LoadMoreData /> */}
             {/* Tree View component / recursive navigation menu*/}
-            <TreeView menus={menus} />
+            {/* <TreeView menus={menus} /> */}
+            {/* Qr Code Gnerator */}
+            <QRCodeGenerator />
         </div>
     );
 }
