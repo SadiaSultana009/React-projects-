@@ -7,30 +7,41 @@ import TreeView from "./Components/tree-view";
 import menus from "./Components/tree-view/data";
 import QRCodeGenerator from "./Components/qr-code-generator";
 import LightDarkMode from "./Components/light-dark-mode";
+import ScrollIndicator from "./Components/scroll-indicator";
 
 function App() {
     return (
         <div className="App">
             {/* Accordian component */}
             {/* <Accordian/> */}
+
             {/* Random color component*/}
             {/* <RandomColor/> */}
+
             {/* Star Rating Components */}
             {/* <StarRating NoofStars={10}/> */}
+
             {/* Image Slider */}
             {/* <ImageSlider
                 url={"https://picsum.photos/v2/list"}
                 page={"2"}
                 limit={10}
             /> */}
+
             {/* Load More Products Components */}
             {/* <LoadMoreData /> */}
+
             {/* Tree View component / recursive navigation menu*/}
             {/* <TreeView menus={menus} /> */}
+
             {/* Qr Code Gnerator */}
             {/* <QRCodeGenerator /> */}
+
             {/* Light and dark mode switch */}
-            <LightDarkMode />
+            {/* <LightDarkMode /> */}
+
+            {/* Scroll indicator component */}
+            <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
         </div>
     );
 }
