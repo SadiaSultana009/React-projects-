@@ -1,23 +1,29 @@
 import Tabs from "./tabs";
 import "./tabs.css";
 
-function RandomComponent() {
-    return <h1>Some Random Content</h1>;
+function RandomComponent({ tab }) {
+    if (tab === 1) {
+        return <h1>Hey there it's me !</h1>;
+    } else if (tab === 2) {
+        return <h2>I love to learn react</h2>;
+    } else {
+        return <h3>Welcome to my learning page</h3>;
+    }
 }
 
 export default function TabTest() {
     const tabs = [
         {
             label: "Tab 1",
-            content: <div>This is content for tab 1</div>,
+            content: <RandomComponent tab={1} />,
         },
         {
             label: "Tab 2",
-            content: <div>This is content for tab 2</div>,
+            content: <RandomComponent tab={2} />,
         },
         {
             label: "Tab 3",
-            content: <RandomComponent />,
+            content: <RandomComponent tab={3} />,
         },
     ];
 
